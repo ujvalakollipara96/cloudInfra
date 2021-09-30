@@ -16,3 +16,5 @@ HelloWorldLogPic -----> I ran it in the GUI, so this is the image of the log tha
 Part2 of homework:
 JupyterNotebookPic -------> this is the screenshot of the jupyternotebook open on my system from running the microsoft image pulled
 
+Thanks and Regards
+Ujvala Kollipara
