@@ -1,7 +1,7 @@
 import boto3
 import csv
 
-s3 = boto3.resource('s3',aws_access_key_id='AKIATHB23F4LFAVWDAUI',aws_secret_access_key='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')
+s3 = boto3.resource('s3',aws_access_key_id='had_to_remove_this',aws_secret_access_key='had_to_remove_secretkeys')
 print("sent access key and id")
 
 try:
@@ -29,7 +29,7 @@ s3.Object('ujju2', 'exp3.csv').Acl().put(ACL='public-read')
 
 
 
-dyndb = boto3.resource('dynamodb', region_name='us-east-2',aws_access_key_id='AKIATHB23F4LFAVWDAUI', aws_secret_access_key='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')
+dyndb = boto3.resource('dynamodb', region_name='us-east-2',aws_access_key_id='had_to_remove_this', aws_secret_access_key='had_to_remove_it')
 try:
     table = dyndb.create_table(
         TableName='DataTable',
