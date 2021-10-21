@@ -1,1 +1,10 @@
+Dear Sir
 I have attached the following in the file:
+  1. code.py : this file contains the code I used to create the bucket,upload content to the bucket,create the table and populate the table with the values of
+  the csv files given in the homework page. It also contains the query.
+  
+  2. DataTable.png : This is an image that shows my Amazon Table and how it is populated
+  
+  3. Query.pgn : This is a screenshot of the code used to get an item from the table
+  
+  4. Output.png : This is a screenshot of the output of the query. The output has been highlighted. 
