@@ -21,7 +21,9 @@ To run the application in the cloud shell, we need to enter the following comman
 kubectl exec -it terminal-74f64f869f-gxtm4 -- python3 mainapp.py
 
 I have put in two screenshots:
-- services running 
-- workloads runnning
+- services running , called ServicesCloudProject
+- workloads runnning, called WorkloadsCloudProject
 
-I have also put in the yaml files I used to create the workloads and services
+I have also put in the yaml files I used to create the workloads and services, because I did have some issues with some containers when
+I tried to deploy them using the GCP interface.
+
