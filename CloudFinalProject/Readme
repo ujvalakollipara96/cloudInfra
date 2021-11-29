@@ -1,0 +1,27 @@
+Dear Professor and TAs, 
+I have included the information as much as I can over here.
+
+
+Where I got the containers from :
+I found images on docker hub, some images, I created.
+The links for them are given here:
+For Hadoop:https://hub.docker.com/r/sequenceiq/hadoop-docker/
+For Spark(both master and nodes):https://hub.docker.com/r/ujvalakollipara96/spark1
+For Jupyter Notebook:https://hub.docker.com/r/bitnami/jupyter-base-notebook
+For SonarQube:https://hub.docker.com/r/ujvalakollipara96/sonar_scanner1
+For the main application:https://hub.docker.com/r/ujvalakollipara96/final1
+
+
+
+Here is the Box link for the video:
+https://cmu.box.com/s/9ln94satu86uz3u8oihl7wxjncqdhtgf
+
+
+To run the application in the cloud shell, we need to enter the following command :
+kubectl exec -it terminal-74f64f869f-gxtm4 -- python3 mainapp.py
+
+I have put in two screenshots:
+- services running 
+- workloads runnning
+
+I have also put in the yaml files I used to create the workloads and services
