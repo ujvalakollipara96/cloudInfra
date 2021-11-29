@@ -25,5 +25,14 @@ I have put in two screenshots:
 - workloads runnning, called WorkloadsCloudProject
 
 I have also put in the yaml files I used to create the workloads and services, because I did have some issues with some containers when
-I tried to deploy them using the GCP interface.
+I tried to deploy them using the GCP interface.The following is the list:
+jupyter-service.yaml ----> This is for the jupyter service. 
+sonar-scanner-workload.yaml ------> This is to deploy the sonarqube workload. 
+sonar-scanner-service.yaml -------> this is to deploy the sonarsqube service
+spark-master.yaml ------> this is to deploy the smark-master service
+spark-worker1.yaml ------> This is to deploy the service for one spark worker node
+spark-worker2.yaml -------? Tjhis is to deploy the service for the second spark worker node
+
+I have also uploaded the Docekr file used to create the container for the main application.
+The code that I used for the main application is a python file called mainapp.py
 
