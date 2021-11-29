@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: spark-worker2
+  name: spark-worker2
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: spark-worker2
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: spark-worker2
+    spec:
+      containers:
+      - image: gcr.io/cloud-homework-327613/ujvalakollipara96/spark1@sha256:323df56fc57db853f76685d77c061fc9907991c5f7eccdffaad84c1c3915d9f6
+        imagePullPolicy: IfNotPresent
+        name: spark-worker2
+        command: ["/spark-worker"]
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      terminationGracePeriodSeconds: 300
+  replicas: 1
