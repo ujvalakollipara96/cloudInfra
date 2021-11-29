@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: sonar-scanner1        
+  name: sonar-scanner1
+  namespace: default
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sonar-scanner1
+    spec:
+      containers:
+      - image: gcr.io/cloud-homework-327613/ujvalakollipara96/sonar_scanner1@sha256:6a4cdda7fe27d354f86fb2531c32de8cd603b1667b4fc4c52fff77b3ce04cacc
+        imagePullPolicy: IfNotPresent
+        name: sonar-scanner1
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      terminationGracePeriodSeconds: 30
+status:
+  replicas: 1
